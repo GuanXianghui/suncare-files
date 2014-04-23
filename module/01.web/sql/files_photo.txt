@@ -1,0 +1,7 @@
+create table files_photo( #文档照片表
+	id int auto_increment primary key comment '主键 自增',
+	files_id int not null comment '文档id 不为空',
+	photo_desc varchar(50) comment '照片描述 可为空',
+	photo varchar(200) not null comment '照片相对地址 不为空',
+	index_id int not null comment '位置索引id 不为空'
+);

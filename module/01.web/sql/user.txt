@@ -1,0 +1,8 @@
+create table user( #用户表
+	id int auto_increment primary key comment '主键 自增',
+	name varchar(30) unique not null comment '姓名 不为空',
+	password varchar(32) not null comment '密码 md5签名 不为空'
+);
+
+#初始化sql
+insert into user(id, name, password) values (null, 'admin', '6f2099461325b5098fd873654329c5a9');

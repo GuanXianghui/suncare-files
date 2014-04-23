@@ -1,0 +1,16 @@
+create table files( #文档表
+	id int auto_increment primary key comment '主键 自增',
+	name varchar(50) unique not null comment '文档名称 不为空',
+	file_num varchar(100) comment '报告编号 可为空',
+	project_name varchar(100) comment '工程名称 可为空',
+	door_series varchar(100) comment '门窗系列 可为空',
+	glass_type varchar(100) comment '玻璃规格 可为空',
+	wind varchar(100) comment '抗风压性能 可为空',
+	air varchar(100) comment '气密性 可为空',
+	water varchar(100) comment '水密性 可为空',
+	temperature varchar(100) comment '保温性 可为空',
+	voice varchar(100) comment '隔声性 可为空',
+	sun varchar(100) comment '遮阳系数 可为空',
+	perspective varchar(100) comment '可见光透射比 可为空',
+	dew_point varchar(100) comment '露点测试 可为空'
+);
